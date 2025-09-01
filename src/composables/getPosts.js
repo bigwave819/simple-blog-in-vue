@@ -6,7 +6,7 @@ const getPosts = () => {
 
     const load = async () => {
       try{
-        let data = await fetch('http://localhost:3000/posts');
+        let data = await fetch('http://localhost:8000/posts');
         if(!data.ok){
          throw Error('no data avilable');
         }
